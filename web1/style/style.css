@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 4rem;
+}
+
+
+
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(160, 150, 150);
+    text-align: center;
+    padding-top: 1rem;
+    width: 100vw;
+    position: fixed;
+
+
+}
+
+.Navbar h3 {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.Navbar .links {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    margin-right: 1.2rem;
+
+
+}
+
+.links li {
+    list-style: none;
+    padding-left: 2rem;
+    padding-top: 5px;
+    display: flex;
+    align-items: flex-start;
+
+
+}
