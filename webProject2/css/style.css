@@ -1,8 +1,18 @@
 /* -------------------------- Start Gloobal rules -------------------------- */
 /* !some variables */
+
 :root {
     --main-color: #2196f3;
     --main-color-alt: #1787e0;
+    --main-transition: 0.3s
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -11,6 +21,10 @@ html {
 
 body {
     font-family: "Cairo", sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
@@ -43,3 +57,52 @@ ul {
 }
 
 /* -------------------------- Finish Gloobal rules -------------------------- */
+
+
+
+
+/* ------------------------------ start header ------------------------------ */
+.header {
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.header .logo {
+    color: var(--main-color);
+    font-size: 26px;
+    font-weight: bold;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header .main-nav {
+    display: flex;
+
+}
+
+.header .main-nav>li>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    padding: 0 30px;
+    color: black;
+    transition: var(--main-transition);
+
+}
+
+/* ------------------------------ end Header header ------------------------------ */
