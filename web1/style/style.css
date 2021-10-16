@@ -49,14 +49,14 @@
 
 
 
-.Box {
+/* .Box {
     width: 100px;
     height: 100px;
     position: absolute;
     background-color: rgb(199, 192, 192);
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     margin-left: -50px;
     margin-top: -50px;
     border-radius: 50%;
@@ -67,7 +67,7 @@
     justify-content: center;
     animation: spin 1s 5 linear alternate-reverse 2s;
     animation-fill-mode:forwards;
-    /* animation-direction: reverse; */
+    animation-direction: reverse;
 }
 
 
@@ -78,5 +78,54 @@
 
     100% {
         transform: rotate(360deg);
+    }
+} */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.load {
+    /* margin: 50px auto; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    animation: up-to-down 0.5s infinite 2s linear;
+    margin-left: 5px;
+    animation-direction: alternate;
+}
+
+.load .two {
+    animation-delay: 2.3s;
+}
+
+.load .three {
+    animation-delay: 2.6s;
+}
+
+
+@keyframes up-to-down {
+    to {
+        opacity: 0.3;
+        transform: translateY(-10px);
     }
 }
