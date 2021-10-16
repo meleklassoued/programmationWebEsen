@@ -65,7 +65,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: spin 1s 5 linear alternate-reverse;
+    animation: spin 1s 5 linear alternate-reverse 2s;
+    animation-fill-mode:forwards;
     /* animation-direction: reverse; */
 }
 
