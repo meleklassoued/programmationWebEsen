@@ -50,23 +50,32 @@
 
 
 .Box {
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    background-color: red;
+    background-color: rgb(199, 192, 192);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation: change 1s infinite;
+    /* transform: translate(-50%, -50%); */
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 5px blue solid;
+    border-left-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 1s 5 linear alternate-reverse;
+    /* animation-direction: reverse; */
 }
 
 
-@keyframes change {
+@keyframes spin {
     0% {
-        background-color: red;
+        transform: rotate(0deg);
     }
 
     100% {
-        background-color: blue;   
+        transform: rotate(360deg);
     }
 }
