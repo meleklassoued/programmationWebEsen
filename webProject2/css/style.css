@@ -128,6 +128,54 @@ ul {
     left: 0;
 }
 
+/* -------------------------------- mega Menu ------------------------------- */
+.header .mega-menu {
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 30px;
+    z-index: 100;
+    background: white;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    border-bottom: var(--main-color) 3px solid;
+    top: calc(100% + 20px);
+    transition: top var(--main-transition), opacity var(--main-transition);
+}
+
+.header .mega-menu .image {
+    margin: auto 0;
+}
+
+.header .mega-menu .image img {
+    width: 300px;
+    height: 150px;
+
+}
+
+.header .mega-menu .links {}
+
+.header .mega-menu .links li {}
+
+.header .mega-menu .links li::before {}
+
+header .mega-menu .links li :hover ::before {}
+
+.header .mega-menu .links li a {
+    color: var(--main-color);
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header .mega-menu .links li i {
+    margin-right: 10px;
+}
+
+/* ------------------------------ end Mega Menu ----------------------------- */
+
 /* responsive header */
 
 @media(max-width:767px) {
