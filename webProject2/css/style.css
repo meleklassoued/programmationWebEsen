@@ -145,7 +145,8 @@ ul {
 }
 
 .header .mega-menu .image {
-    margin: auto 0;
+    margin: auto 60px;
+    flex: 1
 }
 
 .header .mega-menu .image img {
@@ -154,13 +155,35 @@ ul {
 
 }
 
-.header .mega-menu .links {}
+.header .mega-menu .links {
+    min-width: 180px;
 
-.header .mega-menu .links li {}
+}
 
-.header .mega-menu .links li::before {}
+.header .mega-menu .links li {
+    position: relative;
+}
 
-header .mega-menu .links li :hover ::before {}
+.header .mega-menu .links li:not(last-child) {
+    border-bottom: 1px solid #E9E6E6;
+}
+
+.header .mega-menu .links li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(179, 210, 245);
+    z-index: -1;
+    transition: var(--main-transition);
+
+}
+
+.header .mega-menu .links li:hover::before {
+    width: 100%;
+}
 
 .header .mega-menu .links li a {
     color: var(--main-color);
@@ -174,6 +197,27 @@ header .mega-menu .links li :hover ::before {}
     margin-right: 10px;
 }
 
+/* mega menu  */
+@media(max-width:991px) {
+    .header .mega-menu .image {
+        display: none;
+    }
+
+    .header .mega-menu .links {
+        flex: 1;
+    }
+}
+
+@media(max-width:767px) {
+    .header .mega-menu {
+        flex-direction: column;
+        gap: 0;
+        padding: 0px;
+    }
+    
+}
+
+/* finish mega menu  */
 /* ------------------------------ end Mega Menu ----------------------------- */
 
 /* responsive header */
@@ -194,6 +238,7 @@ header .mega-menu .links li :hover ::before {}
         height: 40px;
     }
 }
+
 
 /* ------------------------------ end Header header ------------------------------ */
 /* ------------------------------ start landing ----------------------------- */
