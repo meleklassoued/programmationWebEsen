@@ -82,7 +82,7 @@
 } */
 
 
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
 }
@@ -93,18 +93,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-}
 
-.load {
+
+/* .load {
     /* margin: 50px auto; */
-    height: 100vh;
+/* height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center; */
 
-.load div {
+
+/* .load div {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -128,4 +128,104 @@ body {
         opacity: 0.3;
         transform: translateY(-10px);
     }
+}  */
+
+
+
+
+
+
+/* .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+
+}
+
+.logo-container h1 {
+    color: dodgerblue;
+    padding-left: 1rem;
+    font-style: oblique;
+    font-size: 1.6rem;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 1rem;
+}
+
+ul>li {
+    padding-left: 1rem;
+    font-size: medium;
+    color: grey;
+}
+
+ul>li:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+
+#aslema {
+    background-color: red;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+label {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+input {
+    width: 100px;
+}
+
+.label1 {
+    margin-right: 10px;
+}
+
+.label2 {
+    margin-top: 10px;
+}
+
+form {
+    border-radius: 3px bold red;
+}
+
+.btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+button {
+    background-color: bisque;
+    border-radius: 30px;
+
+}
+
+button:hover {
+    background-color: brown;
+    cursor: pointer;
 }
