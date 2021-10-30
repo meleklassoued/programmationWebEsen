@@ -382,7 +382,7 @@ ul {
 
     40%,
     60% {
-        transform: translateY(-20px);
+        transform: translateY(-25px);
     }
 }
 
@@ -390,3 +390,97 @@ ul {
 
 
 /* ------------------------------- end landing ------------------------------ */
+
+
+/* ------------------------------- Start main ------------------------------- */
+.main-title {
+    margin: 100px auto;
+    border: 4px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    transition: var(--main-transition);
+}
+
+.main-title::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+
+}
+
+.main-title::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.main-title:hover::before {
+    z-index: -1;
+    animation: left-move 0.5s linear forwards;
+}
+
+.main-title:hover::after {
+    z-index: -1;
+    animation: right-move 0.5s linear forwards;
+}
+
+.main-title:hover {
+    color: white;
+    border: 2px solid white;
+    transition-delay: 0.5s;
+
+}
+
+/* ----------------------------- main animation ----------------------------- */
+@keyframes left-move {
+    50% {
+        left: 0;
+        width: 12px;
+        height: 12px;
+    }
+
+    100% {
+        left: 0;
+        border-radius: 0;
+        width: 50%;
+        height: 100%;
+
+    }
+
+}
+
+@keyframes right-move {
+    50% {
+        right: 0;
+        width: 12px;
+        height: 12px;
+    }
+
+    100% {
+        right: 0;
+        border-radius: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+/* ----------------------------- end main animation ----------------------------- */
+
+/* -------------------------------- end main -------------------------------- */
