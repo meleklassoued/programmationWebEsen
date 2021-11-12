@@ -401,6 +401,7 @@ ul {
     width: fit-content;
     position: relative;
     transition: var(--main-transition);
+    cursor: pointer;
 }
 
 .main-title::before {
