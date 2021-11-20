@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Lato:ital,wght@0,300;1,400&family=Pacifico&display=swap');
+
+
+
+body {
+    background: rgb(245, 243, 243);
+
+}
+
+h1 {
+    font-family: 'Belleza', sans-serif;
+    color: #181818;
+    font-size: 1.2em;
+    width: 90%;
+    margin: 20px 10px 20px 10px;
+    border: 1px solid rgb(173, 161, 161);
+    padding: 20px 10px 20px 10px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(141, 141, 192);
+    letter-spacing: 10px;
+    border-radius: 20%;
+    box-shadow: 20px 20PX 20px 20px #8a87876b;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+
+
+}
