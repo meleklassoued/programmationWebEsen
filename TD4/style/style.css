@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Lato:ital,wght@0,300;1,400&family=Pacifico&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Lato:ital,wght@0,300;1,400&family=Pacifico&display=swap');
 
 
 
@@ -28,4 +28,64 @@ h1 {
     text-transform: capitalize;
 
 
+} */
+
+
+/* * {
+    color: yellow;
+} */
+
+
+
+/* #aslema1 {
+    color: red;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#aslema {
+    color: red;
+    font-size: 60px;
+    font-style: italic;
+
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+
+
+
+.container {
+
+    height: 200px;
+    width: 300px;
+    border: red solid 5px;
+    padding: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.521);
+    position: relative;
+    vertical-align: bottom;
+    display: inline-block;
+
+
+
+}
+
+
+/* .container::after {
+    content: "";
+
+    border: red solid 5px;
+    position: absolute;
+    margin-bottom: 40px;
+
+} */
+
+.container h1 {
+    font-family: 'Comforter Brush', cursive;
+    text-align: center;
+}
+
+p {
+    vertical-align: middle;
 }
