@@ -1,3 +1,5 @@
-var Navbar = document.querySelectorAll(".navbar");
+document.getElementById("btn").addEventListener("click", myFunction);
 
-Navbar.addEventListener("onclick", console.log("aslema"));
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
