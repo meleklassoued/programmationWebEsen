@@ -1,0 +1,56 @@
+/* ------------------------------- global css ------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ----------------------------- Styling header ----------------------------- */
+
+header {
+    background-color: #a2a2a2;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10rem;
+    height: 70px;
+
+
+
+
+}
+
+
+.page-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0.6;
+    list-style: none;
+
+
+}
+
+
+
+.landing-image {
+    min-height: 100vh;
+    background-color: #6f7275;
+    background-image: url("../assets/image3.jpg");
+    background-size: cover;
+    position: relative;
+}
