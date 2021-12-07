@@ -1,10 +1,25 @@
 /* ------------------------------- global css ------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:wght@300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s
+}
+
+
 
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,17 +31,54 @@ html {
 /* ----------------------------- Styling header ----------------------------- */
 
 header {
-    background-color: #a2a2a2;
+    background-color: #010101;
     width: 100%;
     z-index: 2;
+    color: white;
+    min-height: 100vh;
+    background-image: url("../assets/image1.jpg");
+    background-color: #34363885 !important;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    animation: changeBg 20s infinite ease-in-out;
+    position: relative;
+}
 
+
+/* ----------------------- Background-header animation ---------------------- */
+
+@keyframes changeBg {
+
+    0%,
+    100% {
+        background-image: url('../assets/image1.jpg');
+    }
+
+    25% {
+        background-image: url('../assets/image2.jpg');
+    }
+
+    50% {
+        background-image: url('../assets/image3.jpg');
+    }
+
+    75% {
+        background-image: url('../assets/image4.jpg');
+    }
+}
+
+/* ---------------------------- finish animation ---------------------------- */
+.Logo-container h2 {
+    color: var(--main-color);
+    font-size: 30px;
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10rem;
+    gap: 12rem;
     height: 70px;
 
 
@@ -39,18 +91,131 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex: 0.6;
+    flex: 0.4;
     list-style: none;
 
 
+
+
+}
+
+.page-list>li {
+    margin: 0;
 }
 
 
-
-.landing-image {
-    min-height: 100vh;
-    background-color: #6f7275;
-    background-image: url("../assets/image3.jpg");
-    background-size: cover;
+.page-list>li>a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
     position: relative;
+    transition: var(--main-transition);
+    overflow: hidden;
+    height: 100%;
+
 }
+
+.page-list>li:last-child>a {
+    color: var(--main-color-alt);
+    font-weight: bolder;
+}
+
+
+
+.page-list>li>a:hover {
+    animation: CBC ease-out 1s;
+    animation-fill-mode: forwards;
+    transition: var(--main-transition) animation
+}
+
+/* --------------------------- animation for links -------------------------- */
+@keyframes CBC {
+
+    0%,
+    10% {}
+
+    to {
+
+        color: var(--main-color);
+
+    }
+
+
+}
+
+/* ---------------------------- finish animation ---------------------------- */
+
+
+
+
+.contact-container>button {
+    border-color: var(--main-color);
+    color: #fff !important;
+    box-shadow: 0 0 40px 40px var(--main-color) inset, 0 0 0 0 var(--main-color);
+    transition: all 150ms ease-in-out;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.2em;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1;
+    padding: 0.6em 0.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+.contact-container>button:hover {
+    box-shadow: 0 0 10px 0 var(--main-color) inset, 0 0 10px 4px var(--main-color);
+
+}
+
+header>.description {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+header>.description>.Gym-name {
+    color: var(--main-color);
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+header>.description>.Gym-name>span {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+
+header>.description>h3 {
+    text-align: center;
+    margin-top: 1em;
+    font-style: italic;
+    font-size: 60px;
+
+}
+
+header>.description>p {
+    text-align: center;
+    margin-top: 0.5em;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    color: var(--main-color-alt);
+    font-weight: bolder;
+
+
+}
+
