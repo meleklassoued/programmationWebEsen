@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Sportif</title>
 </head>
 
@@ -49,24 +51,61 @@
     <!-- ---------------------------- start Landing ---------------------------- -->
 
     <div class="landing-space">
-        <div class="first-section">
+        <div class="first-section" data-aos="fade-down">
             <p>Nos offres sont bien étudiées</p>
             <button>Nos Tarifs</button>
         </div>
         <div class="second-section">
             <h1>SPortif Gym</h1>
             <p>fitness club</p>
-            <div class="section-description">
+            <div class="section-description" data-aos="fade-right">
                 <p>Profitez d'un cadre agréable, des espaces aérés et climatisés, des équipements de pointe et des
                     coachs qualifiés pour vous encadrer, vous motiver et vous soutenir. Galaxy Gym est une salle de
                     sport et de fitness qui vous propose des cours variés dans un espace de Fitness destiné aux adultes,
                     ados et enfants. Vous trouverez tous ce qu'il vous faut dans nos espaces de musculation et Cardio
                     Training avec un matériel de qualité.</p>
-                <img src="assets/image6.jpg" alt="reception">
+                <img src="assets/image6.jpg" data-aos="fade-left" alt="reception" >
             </div>
         </div>
-        <div class="third-section">
-            
+        <div class="third-section" data-aos="fade-down">
+            <div class="spaces-description">
+                 <h1>Nos Espaces</h1>
+            <p>Profitez de nos espaces equipés</p>
+            </div>
+           
+            <div class="spaces-container">
+                <div class="Espace" data-aos="zoom-in">
+                    <p>Suivez nos parcours d’exercices pour se muscler, se raffermir, se sculpter, développer sa force
+                        en
+                        ciblant aussi bien le haut que le bas du corps. La musculation a l’avantage de dessiner les
+                        zones du
+                        corps et de cibler les muscles grâce à des mouvements adaptés.
+                    </p>
+                    <div class="Blog">
+                        <h2>Musculation</h2>
+                        <img src="assets/image8.png" alt="Musculation">
+                    </div>
+                </div>
+                <div class="Espace" data-aos="zoom-in">
+                    <p>Le cardio training regroupe l’ensemble des disciplines mettant à contribution l’appareil cardio
+                        respiratoire. Profitez de notre espace pour améliorer votre condition physique, le souffle, la
+                        récupération, faciliter la perte de poids et brûler des graisses.</p>
+                    <div class="Blog">
+                        <h2>Cardio-training</h2>
+                        <img src="assets/image7.png" alt="Cardio">
+                    </div>
+                </div>
+                <div class="Espace" data-aos="zoom-in">
+                    <p>Profitez de notre espace de Fitness. Vous vouliez transpirer, danser, vous affiner, vous muscler,
+                        vous défouler, vous détendre, il y en a pour tous les goûts, tous les besoins et toutes les
+                        envies.
+                        Trouvez encore plus de détails dans notre planning des cours</p>
+                    <div class="Blog">
+                        <h2>Espace Fitness</h2>
+                        <img src="assets/image9.png" alt="fitness">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -75,7 +114,9 @@
 
 
 
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
