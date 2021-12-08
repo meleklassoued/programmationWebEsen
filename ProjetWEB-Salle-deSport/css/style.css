@@ -16,11 +16,11 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    pointer-events: auto;
 }
 
 * {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -154,7 +154,7 @@ header {
     overflow: hidden;
     height: 100%;
     cursor: pointer;
-    pointer-events: auto;
+
 
 
 }
@@ -167,7 +167,7 @@ header {
 
 
 .page-list>li>a:hover {
-    animation: CBC ease-out 1s;
+    animation: CBC ease-out 0.3s;
     animation-fill-mode: forwards;
     transition: var(--main-transition);
 
@@ -444,7 +444,7 @@ header>.description>p {
 
 
 .third-section {
-    height: 800px;
+    height: 790px;
     width: 100%;
     background-color: #1787e0c2;
     display: flex;
@@ -491,6 +491,7 @@ header>.description>p {
     font-family: 'Lato', sans-serif;
     font-size: 1.4em;
     color: #303030;
+    font-weight: bolder;
 
 
 }
@@ -518,6 +519,7 @@ header>.description>p {
     justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
+    cursor: pointer;
 
 }
 
@@ -530,6 +532,7 @@ header>.description>p {
     color: white;
     font-family: 'Lato', sans-serif;
     line-height: 25px;
+
 }
 
 .third-section>.spaces-container>.Espace>.Blog {
@@ -553,4 +556,50 @@ header>.description>p {
     font-size: 1em;
 
 
+}
+
+
+
+.section-four {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(64, 64, 64, 0.97);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.section-four>p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 24px;
+
+}
+
+.section-four>button {
+    border-color: var(--main-color);
+    color: #fff !important;
+    box-shadow: 0 0 40px 40px var(--main-color) inset, 0 0 0 0 var(--main-color);
+    transition: all 150ms ease-in-out;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.2em;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1;
+    padding: 0.9em 1.1em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-four>button:hover {
+    box-shadow: 0 0 10px 0 var(--main-color) inset, 0 0 10px 4px var(--main-color);
+    cursor: pointer;
+    
 }
