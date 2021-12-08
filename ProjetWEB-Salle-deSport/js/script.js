@@ -1,0 +1,1 @@
+window.onscroll(()=>console.log("aslema"));
