@@ -7,24 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
-    <script src="index.js"></script>
+   
 </head>
 
 <body>
-    <nav class="navbar">
-        <div>
-            <h3>Comapany</h3>
-        </div>
-        <ul class="list-container">
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-        </ul>
-    </nav>
-    <button id="btn">enzel</button>
-    <p id="demo"></p>
+<h1>Exercice 2 </h1>
+<hr/>
+<form name="formChoix" method="get" action="sauvegarde.php">
+ <div>
+ <label for="nom" class="Titre">Nom:</label>
+ <input type="text" size="30" name="nom" id="nom"/>
+ </div>
+<div>
+ <label for="prenom" class="Titre">Prénom:</label>
+ <input type="text" size="30" name="prenom" id="prenom"/>
+</div>
+<div>
+ <label for="listecouleurs" class="Titre">Couleur:</label>
+ <select name="listecouleurs" id="listecouleurs">
+ <option value="Rouge" class="Rouge" selected>Rouge</option>
+ <option value="Vert" class="Vert" >Vert</option>
+ <option value="Bleu" class="Bleu">Bleu</option>
+ </select>
+ </div>
+ <div class="centrer">
+ <button type="button" name="OK"
+ onclick="
+ if(document.formChoix.nom.value.length<3){
+ alert ('Veuillez saisir le nom ');
+ document.formChoix.nom.focus();
+ }else if (document.formChoix.prenom.value.length<3){
+ alert ('Veuillez saisir le prenom ');
+ document.formChoix.prenom.focus();
+ } else {
+ document.formChoix.resulat.value= 'Bonjour ' + document.formChoix.nom.value
++ ' '+ document.formChoix.prenom.value + '\nVotre couleur est: '+
+
+document.formChoix.listecouleurs[document.formChoix.listecouleurs.selectedIndex].value;}
+ ">OK</button>
+ <button type="reset" name="Effacer">Effacer</button>
+ </div>
+ <div><textarea cols="40" rows="5" name="resulat" readonly></textarea></div>
+</form>
+ 
 
 
+
+
+
+    
+ <!-- <script src="index.js"></script> -->
 </body>
 
 </html>
