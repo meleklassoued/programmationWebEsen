@@ -23,9 +23,30 @@ body {
     -webkit-box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
+/* ----------------------------- Scroll-bar css ----------------------------- */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* border-radius: 5px; */
+    background-color: #222222
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color-alt);
+}
 
 
 
