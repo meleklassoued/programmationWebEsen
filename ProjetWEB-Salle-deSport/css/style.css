@@ -26,6 +26,11 @@ body {
     /* box-sizing: border-box; */
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* ----------------------------- Scroll-bar css ----------------------------- */
 ::-webkit-scrollbar {
     width: 12px;
@@ -105,7 +110,7 @@ header {
 @keyframes changeBg {
 
     0%,
-    100% {
+        {
         background-image: url('../assets/image1.jpg');
     }
 
@@ -119,6 +124,10 @@ header {
 
     75% {
         background-image: url('../assets/image4.jpg');
+    }
+
+    100% {
+        background-image: url('../assets/image1.jpg')
     }
 }
 
